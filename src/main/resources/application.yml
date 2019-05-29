@@ -1,0 +1,27 @@
+
+#指定上下文，默认为：/
+server:
+  servlet:
+    context-path: /sbt-demo
+
+#指定默认配置环境
+spring:
+  profiles:
+    active: dev
+
+---
+#开发环境特性属性配置
+spring:
+  profiles: dev
+
+server:
+  port: 8081
+
+
+---
+#uat环境特性属性配置
+spring:
+  profiles: uat
+
+server:
+  port: 80
